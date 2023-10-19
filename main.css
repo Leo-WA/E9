@@ -80,8 +80,6 @@ h5 {
     max-width: 30%;
     margin-left: 50px;
   }
-}
-
 
 .discount {
   color: green;
@@ -159,3 +157,8 @@ footer {
   width: 48%;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+      background-color: lightblue;
+  }
+}
