@@ -33,7 +33,7 @@ header {
 .column-text {
   display: flex;
   align-items: center;
-  max-width: 100%;
+  width: 100%;
   box-sizing: border-box;
   border: 3px solid #000000;
   border-radius: 10px;
@@ -97,17 +97,18 @@ h5 {
 }
 
 .product {
+  width: 100%;
   flex: 1;
-  width: calc(25% - 2%);
+  width: calc(50% - 2%); /* Dois elementos por linha em tablets */
   margin: 1%;
   padding: 20px;
   border: 3px solid #000000;
   background-color: #ffffff;
   border-radius: 10px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  text-align: center; 
+  text-align: center;
 }
 
 .product img {
@@ -127,7 +128,7 @@ h5 {
 }
 
 .product button {
-  width: 50%;
+  width: 100%;
   padding: 10px;
   background-color: #4CAF50;
   color: white;
@@ -149,16 +150,16 @@ footer {
   border: 3px solid #000000;
 }
 
-.mobile .product {
-  width: 100%;
-}
-
-.tablet .product {
-  width: 48%;
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-      background-color: lightblue;
+@media (max-width: 768px) {
+  .product {
+    flex: 30%;
   }
+}
+
+@media (max-width: 640px) {
+#produtos {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
 }
