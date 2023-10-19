@@ -66,12 +66,6 @@ h5 {
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .column-text, .column-image {
     max-width: 100%;
   }
@@ -157,14 +151,11 @@ footer {
   border: 3px solid #000000;
 }
 
-@media (max-width: 768px) {
-  .product {
-    width: 48%;
-  }
-
-  @media (max-width: 640px) {
-    .product {
-      width: 70%;
-    }
-  }
+.mobile .product {
+  width: 100%;
 }
+
+.tablet .product {
+  width: 48%;
+}
+
